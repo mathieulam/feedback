@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedbackCell" rowHeight="100" id="KGk-i7-Jjw" customClass="FeedbackTableViewCell" customModule="Usabilla" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsr-RA-86M">
+                        <rect key="frame" x="16" y="10" width="288" height="79.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ed7-8k-VWs">
+                                <rect key="frame" x="61" y="10" width="187" height="18"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-BoldItalic" family="Avenir Next Condensed" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="iqs-qv-fNP">
+                                <rect key="frame" x="263" y="22.5" width="15" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="tLA-2a-8wA"/>
+                                    <constraint firstAttribute="height" constant="35" id="xbL-YX-LTD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8j-NX-eqF">
+                                <rect key="frame" x="61" y="54" width="187" height="15.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-BoldItalic" family="Avenir Next Condensed" pointSize="11"/>
+                                <color key="textColor" red="0.45882352941176469" green="0.81176470588235294" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iqs-qv-fNP" firstAttribute="centerY" secondItem="bsr-RA-86M" secondAttribute="centerY" id="2Vr-Du-snc"/>
+                            <constraint firstItem="V8j-NX-eqF" firstAttribute="leading" secondItem="ed7-8k-VWs" secondAttribute="leading" id="SNH-66-1B5"/>
+                            <constraint firstItem="ed7-8k-VWs" firstAttribute="top" secondItem="bsr-RA-86M" secondAttribute="top" constant="10" id="ZLS-DC-hab"/>
+                            <constraint firstItem="V8j-NX-eqF" firstAttribute="trailing" secondItem="ed7-8k-VWs" secondAttribute="trailing" id="fzv-go-kqu"/>
+                            <constraint firstAttribute="bottom" secondItem="V8j-NX-eqF" secondAttribute="bottom" constant="10" id="m0Q-Ts-qZh"/>
+                            <constraint firstItem="iqs-qv-fNP" firstAttribute="leading" secondItem="ed7-8k-VWs" secondAttribute="trailing" constant="15" id="pXO-7Y-fI6"/>
+                            <constraint firstAttribute="trailing" secondItem="iqs-qv-fNP" secondAttribute="trailing" constant="10" id="sWR-gK-bxD"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NOd-Uy-pxL">
+                        <rect key="frame" x="24" y="2" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="e1l-VZ-qDw"/>
+                            <constraint firstAttribute="width" constant="43" id="w0F-pr-tVN"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.90980392156862744" green="0.94509803921568625" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="NOd-Uy-pxL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="86S-TM-gGY"/>
+                    <constraint firstItem="ed7-8k-VWs" firstAttribute="leading" secondItem="NOd-Uy-pxL" secondAttribute="trailing" constant="10" id="e33-f7-rEo"/>
+                    <constraint firstItem="bsr-RA-86M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="iTx-a3-PRk"/>
+                    <constraint firstAttribute="bottom" secondItem="bsr-RA-86M" secondAttribute="bottom" constant="10" id="oDz-e2-ltj"/>
+                    <constraint firstItem="NOd-Uy-pxL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="p9A-qn-lZl"/>
+                    <constraint firstItem="bsr-RA-86M" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="pk6-Pr-kmH"/>
+                    <constraint firstItem="bsr-RA-86M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xn7-cK-VJ5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellView" destination="bsr-RA-86M" id="7Hz-vB-hQ4"/>
+                <outlet property="feedbackDateLabel" destination="V8j-NX-eqF" id="6sE-Zq-v8Y"/>
+                <outlet property="feedbackDescriptionLabel" destination="ed7-8k-VWs" id="oD3-H4-Ml6"/>
+                <outlet property="feedbackImageView" destination="NOd-Uy-pxL" id="u9R-P5-wT3"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="116.94152923538232"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="13" height="21"/>
+    </resources>
+</document>
